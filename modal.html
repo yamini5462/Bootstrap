@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Modal</title>
+        <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+        <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+        <style>
+         
+        </style>
+    </head>
+    <body class="container-fluid">
+        <h2>Modals</h2>
+        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#registerModal" >Register</button>
+        <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#loginModal">Login</button>
+
+
+      <!-- Register Modal -->
+
+        <div class="modal fade" id="registerModal">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-xl">
+              <div class="modal-content">
+                 <div class="modal-header bg-warning">
+                    <h2 class="modal-title">Register New User</h2>
+                    <button class="btn-close" data-bs-dismiss="modal" ></button>
+                 </div>
+                 <div class="modal-body">
+                    <!-- <dl>
+                        <dt>User Name</dt>
+                        <dd><input type="text"></dd>
+                        <dt>Password</dt>
+                        <dd><input type="password"></dd>
+                        <dt>Email</dt>
+                        <dd><input type="email"></dd>
+                        <dt>User Name</dt>
+                        <dd><input type="text"></dd>
+                        <dt>Password</dt>
+                        <dd><input type="password"></dd>
+                        <dt>Email</dt>
+                        <dd><input type="email"></dd>
+                        <dt>User Name</dt>
+                        <dd><input type="text"></dd>
+                        <dt>Password</dt>
+                        <dd><input type="password"></dd>
+                        <dt>Email</dt>
+                        <dd><input type="email"></dd>
+                        <dt>User Name</dt>
+                        <dd><input type="text"></dd>
+                        <dt>Password</dt>
+                        <dd><input type="password"></dd>
+                        <dt>Email</dt>
+                        <dd><input type="email"></dd>
+                    </dl> -->
+
+                    <div class="w-25">
+                        <div class="mb-3">
+                            <label class="form-label">UserName</label>
+                            <div>
+                                <input type="text" class="form-control">
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">password</label>
+                            <div>
+                                <input disabled type="password" class="form-control">
+                            </div>
+                        </div>
+                        <h2>Form Dropdown</h2>
+                            <div class="mb-3">
+                                <label class="form-label">Select City</label>
+                                <div>
+                                    <select>
+                                        <option>Delhi</option>
+                                        <option>Hyd</option>
+                                        <option>Chennai</option>
+                                    </select>
+                                </div>
+                            </div>
+                                  <h2>Form Radio</h2>
+                            <div class="mb-3">
+                                <label class="form-label">Gender</label>
+                                <div>
+                                    <input class="form-check-input" checked type="radio" name="Gender">
+                                    <label class="form-check-label">Male</label>
+            
+                                    <input class="form-check-input" type="radio" name="Gender">
+                                    <label class="form-check-label">Female</label>
+                                </div>
+                            </div>
+                            <h2>Form Switches</h2>
+                            <div class="md-3">
+                               <label>Choose Courses</label>
+                               <div class="form-check form-switch">
+                                   <input class="form-check-input" checked type="checkbox">
+                                   <label class="form-check-label">Java</label>
+                               </div>
+            
+                               <div class="form-check form-switch">
+                                <input class="form-check-input" type="checkbox">
+                                <label class="form-check-label">Angular</label>
+                            </div>
+                            <div class="form-check form-switch">
+                                <input class="form-check-input" checked type="checkbox">
+                                <label class="form-check-label">FullStackr</label>
+                            </div>
+                            </div>
+                            <h2>Form Ranges</h2>
+                            <div class="mb-3">
+                                <label class="form-label">Select Price Range</label>
+                                <div>
+                                    <input type="range" class="form-range">
+                                </div>
+                            </div>
+            
+                            <div class="mb-3">
+                                <label class="form-label">Upload Photo</label>
+                                <div>
+                                    <input type="file" class="form-control">
+                                </div>
+                            </div>
+                    
+                </div>
+                 </div>
+                 <div class="modal-footer d-grid">
+                   <span> <button class="btn btn-primary">Register</button>
+                    <button class="btn btn-danger" data-bs-dismiss="modal">Cancel</button></span>
+                 </div>
+              </div>
+            </div>
+        </div>
+
+
+
+      <!-- Login Modal -->
+        <div class="modal fade" id="loginModal">
+            <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h2>User Login</h2>
+                        <button class="btn-close" data-bs-dismiss="modal"></button>
+                      
+                     </div>
+                     <div class="modal-body">
+                        <dl>
+                            <dt>User Name</dt>
+                            <dd><input type="text"></dd>
+                            <dt>Password</dt>
+                            <dd><input type="password"></dd>
+                        </dl>
+                     </div>
+                     <div class="modal-footer">
+                        <button class="btn btn-primary">Login</button>
+                     </div>
+                    </div>
+                
+            </div>
+        </div>  
+
+
+
+
+        <script src="../node_modules/jquery/dist/jquery.js"></script>
+        <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    </body>
+</html>
+

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Nav&tabs</title>
+        <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+        <link rel="stylesheet" href="../Font/css/all.css">
+    </head>
+     <body class="container-fluid">
+         <h2>Nav Tabs</h2>
+         
+             <ul class="nav nav-tabs">
+                 <li class="nav-item">
+                     <button class="nav-link active" data-bs-toggle="tab" data-bs-target="#details">Basic Details</button>
+                 </li>
+                 <li class="nav-item">
+                     <button class="nav-link" data-bs-toggle="tab" data-bs-target="#preview">Preview</button>
+                 </li>
+                 <li class="nav-item">
+                     <button class="nav-link" data-bs-toggle="tab" data-bs-target="#description">Description</button>
+                 </li>
+             </ul>
+        
+         <div class="tab-content mt-3" id="productinfo">
+            <div class="tab-pane fade show active" id="details">
+                 <h4>Details</h4>
+                <dl>
+                    <dt>Name</dt>
+                    <dd>Mobile</dd>
+                    <dt>Price</dt>
+                    <dd>43000.00</dd>
+                    <dt>Stock</dt>
+                    <dd>Available</dd>
+                </dl>
+            </div>
+
+            <div class="tab-pane fade" id="preview">
+                <h3>Perview</h3>
+                <img src="../assets/mobile.jpg" width="150" height="200">
+            </div>
+
+            <div class="tab-pane fade" id="description">
+                <h4>Description</h4>
+                <p>Something About Mobiles</p>
+            </div>
+         </div>
+         <script src="../node_modules/jquery/dist/jquery.js"></script>
+         <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+     </body>
+</html>
